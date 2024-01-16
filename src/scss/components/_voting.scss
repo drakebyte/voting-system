@@ -1,0 +1,29 @@
+.voting-container {
+	text-align: center;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	.voting-buttons {
+		display: inline-block;
+		margin-top: 10px;
+
+		.vote-button {
+			background-color: $background-color;
+			border: 2px solid $default-color;
+			border-radius: 5px;
+			padding: 10px 20px;
+			cursor: pointer;
+			font-size: 16px;
+			margin: 0 10px;
+			transition: background-color 0.3s ease;
+			color: $default-color;
+		}
+
+		.vote-button:hover,
+		.vote-button.selected {
+			border-color: $selected-color;
+			color: $selected-color;
+		}
+	}
+}
